@@ -1,0 +1,835 @@
+#VRML V2.0 utf8 
+Group {
+	children [
+	
+		Background {
+			skyColor [ 1.0 1.0 1.0 ]
+		}
+		
+		#Yellow Body
+		Shape {
+			appearance Appearance {
+				material Material {
+						diffuseColor 1.0 1.0 0.0
+				}
+			}
+
+			geometry Cylinder {
+				bottom TRUE
+				height 3
+				radius 1
+				side TRUE
+				top TRUE
+			}
+		}
+
+		#Yellow head
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0 1.5 0 
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1.0 1.0 0.0
+						}
+					}
+
+				geometry Sphere {
+					radius 1
+				}
+			}]	
+		}
+		
+		#blue trouser bottom
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0 -1.5 0 
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "trouser.jpeg"
+						}
+					}
+
+				geometry Sphere {
+					radius 1.01
+				}
+			}]	
+		}
+		
+		#blue trouser middle
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0 -1 0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {}
+						texture ImageTexture {
+							url "trouser.jpeg"
+						}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 1
+					radius 1.01
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#blue trouser top front
+		Transform {
+			center 0 0 0
+			scale 1.2 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0 -0.15 0.45 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {}
+					texture ImageTexture {
+						url "trouser.jpeg"
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.8
+					radius 0.6
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#blue trouser top back
+		Transform {
+			center 0 0 0
+			scale 1.2 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0 -0.15 -0.45 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {}
+					texture ImageTexture {
+						url "trouser.jpeg"
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.8
+					radius 0.6
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#trouser braces left
+		Transform {
+			center 0 0 0
+			scale 1 1 1.5 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 -0.4
+			translation -0.5 0.2 -0.0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {}
+					texture ImageTexture {
+						url "trouser.jpeg"
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.1
+					radius 0.6
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#trouser braces right
+		Transform {
+			center 0 0 0
+			scale 1 1 1.5 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0.4
+			translation 0.5 0.2 -0.0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {}
+					texture ImageTexture {
+						url "trouser.jpeg"
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.1
+					radius 0.6
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#trouser button right
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 1 0.8 1 2.0
+			translation -0.5 0.2 0.69 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}
+					
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.5
+					radius 0.1
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#trouser button right
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 1 1 1 2.3
+			translation 0.5 0.2 0.69 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}
+					
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.5
+					radius 0.1
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#left leg
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation -0.5 -2.5 0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {}
+					texture ImageTexture {
+						url "trouser.jpeg"
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.5
+					radius 0.2
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+		#left food
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation -0.5 -2.9 0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}
+					
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.35
+					radius 0.22
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+		#left food front
+		Transform {
+			center 0 0 0
+			scale 1.2 1.0 2 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation -0.5 -2.9 0.3 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}
+					
+				}
+
+				geometry Sphere {
+					radius 0.17
+				}
+			}
+		]}
+		
+		#leg right
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0.5 -2.5 0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {}
+					texture ImageTexture {
+						url "trouser.jpeg"
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.5
+					radius 0.2
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+		#food right
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0.5 -2.9 0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.35
+					radius 0.22
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+		#right food front
+		Transform {
+			center 0 0 0
+			scale 1.2 1.0 2 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0.5 -2.9 0.3 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}
+					
+				}
+
+				geometry Sphere {
+					radius 0.17
+				}
+			}
+		]}
+		
+		#Arms top
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 1.5
+			translation 0.0 0.0 0
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 1.0 1.0 0.0
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 4
+					radius 0.15
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+		#Arm right bottom
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 0 0
+			translation 2.0 0.3 0.0
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 1.0 1.0 0.0
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.9
+					radius 0.15
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+		#joint right
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 0 0
+			translation 2.0 -0.15 0.0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1.0 1.0 0.0
+						}
+					}
+
+					geometry Sphere {
+						radius 0.15
+					}
+				}
+		]}
+		
+		#Arm left bottom
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 1 1 4 4
+			translation -1.6 -0.16 0.1
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 1.0 1.0 0.0
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.9
+					radius 0.15
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+		#joint left
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0
+			rotation 0 0 0 0
+			translation -1.95 0.13 0.0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1.0 1.0 0.0
+						}
+					}
+
+					geometry Sphere {
+						radius 0.16
+					}
+				}
+		]}
+		
+		#hand left
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 1 1 4 4
+			translation -1.1 -0.45 0.2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "handshoes.jpg"
+						}
+					}
+
+					geometry Cone {
+						bottomRadius 0.24
+						height 0.45
+						side TRUE
+						bottom TRUE
+					}
+				}
+		]}
+		
+		#hand front left
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 1 1 4 4
+			translation -1.1 -0.5 0.24
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "handshoes.jpg"
+						}
+					}
+
+					geometry Sphere {
+						radius 0.2
+					}
+				}
+		]}
+		
+		#hand right
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 0 0
+			translation 2 0.9 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "handshoes.jpg"
+						}
+						
+					}
+
+					geometry Cone {
+						bottomRadius 0.24
+						height 0.45
+						side TRUE
+						bottom TRUE
+					}
+				}
+		]}
+		
+		#hand front right 
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 0 0
+			translation 2.0 1 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "handshoes.jpg"
+						}
+					}
+
+					geometry Sphere {
+						radius 0.2
+					}
+				}
+		]}
+		
+		#finger middle
+		Transform {
+			center 0 0 0
+			scale 1 2 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 0 0
+			translation 2.0 1.2 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "handshoes.jpg"
+						}
+					}
+
+					geometry Sphere {
+						radius 0.1
+					}
+				}
+		]}
+		
+		#finger right
+		Transform {
+			center 0 0 0
+			scale 1 2 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 2.5
+			translation 2.15 1.1 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "handshoes.jpg"
+						}
+					}
+
+					geometry Sphere {
+						radius 0.1
+					}
+				}
+		]}
+		
+		#finger left
+		Transform {
+			center 0 0 0
+			scale 1 2 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 1.2
+			translation 1.85 1.05 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture ImageTexture {
+							url "handshoes.jpg"
+						}
+					}
+
+					geometry Sphere {
+						radius 0.1
+					}
+				}
+		]}
+		
+		#Stirnband
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 0 0 1 0
+			translation 0 1.5 0 
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.3
+					radius 1.03
+					side TRUE
+					top TRUE
+				}
+			}]
+		}
+		
+		#right Eye
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 2 2 2 2
+			translation 0.25 1.5 0.81
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.75 0.75 0.75
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.5
+					radius 0.3
+					side TRUE
+					top TRUE
+				}
+			}
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 1 1 1
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.51
+					radius 0.2
+					side TRUE
+					top TRUE
+				}
+			}
+			
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}	
+				}
+
+				geometry Sphere {
+					radius 0.27
+				}
+				
+			}]
+		}
+	
+		#left eye
+		Transform {
+			center 0 0 0
+			scale 1 1 1 
+			scaleOrientation 0 0 1 0 
+			rotation 2 2 2 2
+			translation -0.25 1.5 0.79
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.75 0.75 0.75
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.5
+					radius 0.3
+					side TRUE
+					top TRUE
+				}
+			}
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 1.0 1.0 1.0
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.51
+					radius 0.2
+					side TRUE
+					top TRUE
+				}
+			}
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 0.0 0.0 0.0
+					}	
+				}
+
+				geometry Sphere {
+					radius 0.27
+				}
+				
+			}
+			]
+		}
+		
+		#mouth
+		Transform {
+			center 0 0 0
+			scale 1 1 2 
+			scaleOrientation 0 0 1 0 
+			rotation 2 2 2 2
+			translation 0.0 0.9 0.76
+			children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 1.0 0.0 0.0
+					}
+				}
+
+				geometry Cylinder {
+					bottom TRUE
+					height 0.5
+					radius 0.06
+					side TRUE
+					top TRUE
+				}
+			}
+		]}
+		
+	]
+	
+}
+    
