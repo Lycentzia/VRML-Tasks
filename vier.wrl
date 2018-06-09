@@ -1,0 +1,72 @@
+#vrml V2.0 utf8
+# vier.wrl: Quader, Zylinder, Kugel, Kegel
+
+Transform {                        # gruenlicher Quader
+  translation 0 0 0                # positioniert im Ursprung 
+  children [                       # bestehend aus
+    Shape {                        # einer Gestalt
+      geometry Box {               # von der Form eines Quaders 
+        size 2 3.5 2               # mit Kantenlaengen 2 3.5 2 
+      } 
+      appearance Appearance {      # in der Erscheinung 
+        material Material {        # mit Materialbeschaffenheit 
+          diffuseColor 0 1 0.5     # Farbe
+        }
+      }
+    }
+  ]
+}
+
+
+Transform {                        # blauer Zylinder
+  translation 0 1 0                # um 1 Einheit nach oben verschoben
+  rotation    0 0 1  1.57075       # bzgl. z-Achse gedreht um 90 Grad
+  children [                       # bestehend aus 
+    Shape {                        # einer Gestalt
+      geometry Cylinder   {        # von der Form eines Zylinders
+       radius 0.2                  # Durchmesser 0.2
+       height 5                    # Höhe 5
+      } 
+      appearance Appearance {      # in der Erscheinung 
+        material Material {        # mit Materialbeschaffenheit 
+          diffuseColor 0 0 1       # blaue Farbe 
+        }  
+      }
+    }
+  ]
+}
+
+
+Transform {                        # Kugel mit Personentextur
+  translation 0 3 0                # um 3 Einheiten nach oben verschoben
+  children [                       # bestehend aus
+    Shape {                        # einer Gestalt
+      geometry Sphere {            # von der Form einer Kugel 
+        radius 1.5                 # mit Radius 1.5
+      } 
+      appearance Appearance {      # in der Erscheinung 
+        texture ImageTexture {     # mit Textur
+          url "oliver.jpg"         # aus der Datei oliver.jpg
+       }
+      }
+    }
+  ]
+}
+
+Transform {                        # roter Kegel
+  translation 0 4.5 0              # um 4.5 Einheiten nach oben verschoben
+  rotation    1 0 0 -0.1745278     # bzgl x-Achse gedreht um 10 Grad nach hinten
+  children [                       # bestehend aus
+    Shape {                        # einer Gestalt
+      geometry Cone   {            # von der Form eines Kegel
+       bottomRadius 2              # Bodendurchmesser 2 
+       height 1                    # Höhe 1
+      } 
+      appearance Appearance {      # in der Erscheinung 
+        material Material {        # mit Materialbeschaffenheit 
+          diffuseColor 1 0 0       # rote Farbe 
+        }  
+      }
+    }
+  ]
+}
