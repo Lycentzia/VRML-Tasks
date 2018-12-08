@@ -14,7 +14,7 @@ This is a Minion like creature that I build with VRML.
 
 In diesem Repository werde ich verschiedene Aufgaben in denen ich VRML benutze hochladen. 
 
-<<<<<<< HEAD
+
 <b>Yellow Creature</b> \\
 
 Hier ist eine Minion-ähnliche Kreatur entstanden indem ich VRML benutzt habe. 
